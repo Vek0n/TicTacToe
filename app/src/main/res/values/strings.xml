@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="resultsTextViewPlayerWin">You won!</string>
+    <string name="resultsTextViewPlayerLost">You lost!</string>
+    <string name="resultsTextViewDraw">Draw!</string>
+    <string name="resultsTextViewPlayerOneWin">Nought won!</string>
+    <string name="resultsTextViewPlayerTwoWin">Cross won!</string>
+    <string name="circleStartsString">Nought starts!</string>
+    <string name="crossStartsString">Cross starts!</string>
+    <string name="circleStartsStringPvC">Computer starts!</string>
+    <string name="crossStartsStringPvC">Player starts!</string>
+    <string name="resultsTextViewInv">Game over!</string>
+    <string name="shareBody">Hey! Check out this app and play classic Tic-Tac-Toe or its multiple variants: https://goo.gl/fc5hqz</string>
+    <string name="subjectRateApp">Tic-Tac-Toe game</string>
+    <string name="shareVia">Share via</string>
+    <string name="titleHelpDialog">How to play?</string>
+    <string name="helpDialogText">In this type of Tic-Tac-Toe both players make X\'s on board. First one to complete three-in-a-row loses.</string>
+    <string name="closeDialog">Close</string>
+
+</resources>

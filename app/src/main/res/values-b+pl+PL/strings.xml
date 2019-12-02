@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Kółko i Krzyżyk</string>
+    <string name="resultsTextViewPlayerWin">Wygrałeś!</string>
+    <string name="resultsTextViewPlayerLost">Przegrałeś!</string>
+    <string name="resultsTextViewDraw">Remis!</string>
+    <string name="resultsTextViewPlayerOneWin">Kółko wygrało!</string>
+    <string name="resultsTextViewPlayerTwoWin">Krzyżyk wygrał!</string>
+    <string name="circleStartsString">Kółko zaczyna!</string>
+    <string name="crossStartsString">Krzyżyk zaczyna!</string>
+    <string name="circleStartsStringPvC">Komputer zaczyna!</string>
+    <string name="crossStartsStringPvC">Gracz zaczyna!</string>
+    <string name="resultsTextViewInv">Koniec gry!</string>
+    <string name="shareBody">Hej! Pobierz tę apkę i zagraj w klasyczne Kółko i krzyżyk lub w jego inne warianty: https://goo.gl/fc5hqz</string>
+    <string name="subjectRateApp">Gra Kołko i Krzyżyk</string>
+    <string name="shareVia">Udostępnij przez</string>
+    <string name="titleHelpDialog">Jak grać?</string>
+    <string name="helpDialogText">W tym trybie gry dwóch graczy umieszcza X\'y na planszy. Przegrywa ten, kto ułoży trzeci w rzędzie.</string>
+    <string name="closeDialog">Zamknij</string>
+</resources>

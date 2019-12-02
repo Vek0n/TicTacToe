@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundlowres"
+    tools:context="com.szymonkaczmarek.tictactoe.StartUpActivity">
+
+    <ImageButton
+        android:id="@+id/buttonPlayClassicMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@drawable/classic_mode_button"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/buttonPlayFourByFourMode"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/buttonPlayFourByFourMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@drawable/four_by_four_mode"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/buttonPlayClassicMode" />
+
+    <ImageButton
+        android:id="@+id/buttonPlayMisereMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@drawable/misere_mode"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/buttonPlayFourByFourMode"
+        android:layout_alignStart="@+id/buttonPlayFourByFourMode" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+    <ImageButton
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@drawable/share_button"
+        android:layout_alignTop="@+id/rateButton"
+        android:layout_alignEnd="@+id/buttonPlayMisereMode" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewStartUpActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1878000431593424/7923013590">
+    </com.google.android.gms.ads.AdView>
+
+    <ImageButton
+        android:id="@+id/rateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@drawable/rate_app"
+        android:layout_alignTop="@+id/feedbackButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/feedbackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@drawable/feedback_button2"
+        android:layout_above="@+id/adViewStartUpActivity"
+        android:layout_alignStart="@+id/buttonPlayMisereMode" />
+
+
+</RelativeLayout>

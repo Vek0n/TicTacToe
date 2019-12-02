@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundlowres"
+    tools:context="com.szymonkaczmarek.tictactoe.PlayerVsPlayerClassicGameActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/field"
+        android:layout_alignTop="@+id/gameOverLine"
+        android:layout_centerHorizontal="true" />
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gridLayout">
+
+        <ImageButton
+            android:id="@+id/button2"
+
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/button0"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@null"
+            android:layout_marginRight="30px"
+            android:layout_marginBottom="30px"
+
+            />
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@null"
+            android:layout_marginRight="30px"
+            app:srcCompat="@drawable/blank" />
+
+        <ImageButton
+            android:id="@+id/button3"
+
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_column="0"
+            android:background="@null"
+            android:layout_row="1"/>
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="@null"
+            android:layout_marginBottom="30px"
+            app:srcCompat="@drawable/blank" />
+
+        <ImageButton
+            android:id="@+id/button5"
+
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:background="@null"
+            app:srcCompat="@drawable/blank" />
+
+        <ImageButton
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:background="@null"
+            app:srcCompat="@drawable/blank" />
+
+        <ImageButton
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:background="@null"
+            app:srcCompat="@drawable/blank" />
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/gameOverLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/blank_end"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/resultsTextViewPlayerOneWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resultsTextViewPlayerTwoWin"
+        android:layout_alignBottom="@+id/resultsTextViewPlayerTwoWin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/resultsTextViewPlayerOneWin"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/resultsTextViewPlayerTwoWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="@string/resultsTextViewPlayerTwoWin"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/resultsTextViewDraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="@string/resultsTextViewDraw"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/crossStartsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="@string/crossStartsString"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/circleStartsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="@string/circleStartsString"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/replayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/replay"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/gridLayout"
+        android:layout_marginEnd="57dp" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/replayButton"
+        android:layout_marginEnd="44dp"
+        android:layout_toStartOf="@+id/replayButton"
+        android:background="@null"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/homebutton" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewClassicPvP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1878000431593424/7923013590"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

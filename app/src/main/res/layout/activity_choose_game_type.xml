@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundlowres"
+    tools:context="com.szymonkaczmarek.tictactoe.ChooseGameTypeActivity">
+
+    <ImageButton
+        android:id="@+id/onePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@drawable/one_player"
+        android:layout_below="@+id/twoPlayers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp" />
+
+    <ImageButton
+        android:id="@+id/twoPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/two_players"
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/onePlayer"
+        android:layout_marginTop="125dp" />
+
+    <ImageButton
+        android:id="@+id/chooseDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/choose_diff"
+        android:background="@null"
+        android:layout_below="@+id/onePlayer"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/onePlayer" />
+
+    <ImageButton
+        android:id="@+id/difficultyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/easy"
+        android:background="@null"
+        android:layout_below="@+id/chooseDifficulty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+
+    <ImageButton
+        android:id="@+id/howToPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        app:srcCompat="@drawable/how_to_play" />
+
+</RelativeLayout>
